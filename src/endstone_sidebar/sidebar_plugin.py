@@ -7,6 +7,7 @@ from endstone.event import event_handler
 from endstone.plugin import Plugin
 from endstone import Player
 from endstone.scoreboard import *
+from .EconomyPilot.database_issuer import server_balance_fetch #database issuer for economy pilot
 
 CUSTOM_OBJECTIVE_NAME = "__CUSTOM_SIDEBAR_OBJECTIVE__"
 
@@ -207,6 +208,12 @@ class SidebarPlugin(Plugin):
             return p.locale
 
         self.register_placeholder("locale", locale)
-
+        
+        #start here
+        
+        def money(p: Player) -> str:
+            return server_balance_fetch(p.name)
+        
+        self.register_placeholder("money",money)
     def register_placeholder(self, name: str, provider: Callable[[Player], str]) -> None:
         self.placeholders[name] = provider

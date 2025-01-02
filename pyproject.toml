@@ -3,19 +3,19 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "endstone-sidebar"
-version = "0.0.2"
+name = "endstone-sidebar-economy"
+version = "0.0.1"
 dependencies = []
 authors = [
-    { name = "daoge_cmd", email = "3523206925@qq.com" }
+    { name = "causalguide" }
 ]
-description = "Custom sidebar plugin for endstone"
+description = "Custom sidebar plugin for endstone with economy api placeholder"
 readme = "README.md"
 license = { file = "LICENSE" }
-keywords = ["endstone", "plugin", "scoreboard", "sidebar"]
+keywords = ["endstone", "plugin", "scoreboard", "sidebar", "economy", "economy pilot"]
 
 [project.urls]
-Homepage = "https://github.com/endstone-essentials/sidebar"
+Homepage = "https://github.com/causal-guide/sidebar-economy"
 
 [project.entry-points."endstone"]
 sidebar = "endstone_sidebar:SidebarPlugin"
