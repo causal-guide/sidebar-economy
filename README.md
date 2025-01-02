@@ -1,7 +1,8 @@
 # Endstone Sidebar Plugin
 
 Custom sidebar plugin for endstone server.
-
+## Custom Added Variable
+- [x] `{money}` Player Balance (Economy Pilot)
 ## Supported Variables
 
 - [x] `{x}` x coordinate
