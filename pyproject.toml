@@ -18,4 +18,4 @@ keywords = ["endstone", "plugin", "scoreboard", "sidebar", "economy", "economy p
 Homepage = "https://github.com/causal-guide/sidebar-economy"
 
 [project.entry-points."endstone"]
-sidebar = "endstone_sidebar:SidebarPlugin"
+sidebar = "endstone_sidebar_economy:SidebarPlugin"
